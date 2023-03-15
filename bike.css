@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins, roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* UTILITÁRIOS */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-bg {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+.menu-bg {
+    background-color: black;
+}
+
+.menu {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.info-menu h1 {
+    color: white;
+    font-size: 50px;
+    line-height: 1;
+    margin-top: 100px;
+}
+
+.info-menu span {
+    color: orange;
+}
+
+.info-menu p {
+    color: gray;
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: 1.4;
+}
+
+.ft-menu {
+    border-radius: 4px;
+}
+
+.bt-menu {
+    padding: 16px 32px;
+    background: linear-gradient(165deg, #bb1, orange);
+    border-radius: 4px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+}
