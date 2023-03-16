@@ -1,3 +1,5 @@
+@import url(./container.css);
+
 body {
     margin: 0px;
     padding: 0px;
@@ -10,17 +12,12 @@ a {
 
 ul {
     list-style: none;
+    padding: 0px;
 }
 
 img {
     max-width: 100%;
     display: block;
-}
-
-/* UTILITÁRIOS */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .header-bg {
@@ -72,10 +69,6 @@ nav a:hover::after {
     grid-template-columns: 1fr 1fr;
 }
 
-.info-menu {
-    
-}
-
 .info-menu h1 {
     color: white;
     font-size: 52px;
@@ -109,3 +102,47 @@ nav a:hover::after {
     object-fit: cover;
     max-height: 100%;
 }
+
+.escolha h2 {
+    font-size: 52px;
+    font-family: roboto;
+}
+
+.escolha span {
+    color: orange;
+}
+
+.bikes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+.bikes-item h3 {
+    font-size: 32px;
+    line-height: 0.2;
+    color: black;
+    position: relative;
+}
+
+.bikes-item h3::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+
+.bikes-item h3:hover::after {
+    width: 50px;
+}
+
+.bikes-item span {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
