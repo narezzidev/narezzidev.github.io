@@ -1,4 +1,5 @@
 @import url(./container.css);
+@import url(util.css);
 
 body {
     margin: 0px;
@@ -18,6 +19,7 @@ ul {
 img {
     max-width: 100%;
     display: block;
+    border-radius: 4px;
 }
 
 .header-bg {
@@ -69,43 +71,8 @@ nav a:hover::after {
     grid-template-columns: 1fr 1fr;
 }
 
-.info-menu h1 {
-    color: white;
-    font-size: 52px;
-    line-height: 1;
-}
-
-.info-menu span {
-    color: orange;
-}
-
 .info-menu p {
-    color: gray;
-    font-size: 24px;
-    font-family: roboto;
-    font-weight: 1.4;
-    margin-bottom: 50px;
-}
-
-.bt-menu {
-    padding: 16px 32px;
-    background: linear-gradient(165deg, #bb1, orange);
-    border-radius: 4px;
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
-    border: none;
-}
-
-.ft-menu img {
-    border-radius: 4px;
-    object-fit: cover;
-    max-height: 100%;
-}
-
-.escolha h2 {
-    font-size: 52px;
-    font-family: roboto;
+    margin-bottom: 40px;
 }
 
 .escolha span {
@@ -113,36 +80,51 @@ nav a:hover::after {
 }
 
 .bikes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 30px;
     padding: 20px;
+}
+
+.bikes-item a {
+    display: block;
 }
 
 .bikes-item h3 {
     font-size: 32px;
     line-height: 0.2;
     color: black;
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.bikes-item h3::after {
+.bikes-item h3::before {
     content: '';
     width: 10px;
     height: 10px;
     background-color: orange;
     display: block;
-    position: absolute;
     top: 10px;
+    align-self: center;
+    transition: 0.3s;
 }
 
-.bikes-item h3:hover::after {
-    width: 50px;
+.bikes-item  a:hover h3::before {
+    width: 30px;
 }
 
 .bikes-item span {
     color: #666;
     font-size: 20px;
     font-weight: 600;
+    margin-left: 22px;
 }
 
+.tecnologia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dv-tec-item {
+    display: flex;
+}

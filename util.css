@@ -1,0 +1,61 @@
+:root {
+    --cor-w: #fff;
+    --cor-g: #aaa;
+    --cor-b: #000;
+}
+
+/* cor */
+
+.cor-w {
+    color: #fff;
+}
+
+.cor-g {
+    color: #aaa;
+}
+
+.cor-b {
+    color: #fff;
+    background-color: #000;
+}
+
+.cor-o {
+    color: orange;
+}
+
+/* fonts */
+
+.f-gg {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.f-g {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.f-m {
+    font-size: 28px;
+    line-height: 1.25;
+}
+.f-p {
+    font-size: 20px;
+    line-height: 1;
+}
+.f-pp {
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* botao */
+
+.botao {
+    padding: 16px 32px;
+    background: linear-gradient(165deg, #bb1, orange);
+    border-radius: 4px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+}
